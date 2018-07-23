@@ -1,5 +1,10 @@
 @import 'variables';
 @import 'library';
+@import 'libraryCourse';
+@import 'arrow';
+@import 'schedule';
+@import 'scheduleCourse';
+@import 'progressTracker';
 
 .home {
     height: 100vh;
@@ -14,13 +19,13 @@
 
 .schedule {
     grid-column: schedule-s/schedule-e;
-    //position: relative;
+    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .gradient {
-    //position: absolute;
+    position: absolute;
     height: 100%;
     width: 100%;
     background: linear-gradient(120deg, $color-purple 0%, $color-light-blue 100%);
