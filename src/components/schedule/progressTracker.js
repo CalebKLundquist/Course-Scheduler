@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export default class ProgressTracker extends Component {
-    
+class ProgressTracker extends Component {
+
     calculateProgress = function() {
         return (this.props.amountEnrolled / this.props.amountPossible) * 100;
     }.bind(this);
@@ -9,11 +9,13 @@ export default class ProgressTracker extends Component {
     render() {
         return (
             <div className="progress-tracker">
-                <label className="progress-trakcer__label">Progress Tracker</label>
-                <div className="progress-trakcer__percentage">
+                <div className="progress-tracker__title">Progress Tracker</div>
+                <div className="progress-tracker__percentage">
                     {this.calculateProgress()}%
                 </div>
             </div>
-        );
+        )
     }
 }
+
+export default ProgressTracker;
